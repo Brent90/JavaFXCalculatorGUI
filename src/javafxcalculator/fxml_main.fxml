@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+
+
+<GridPane   xmlns:fx="http://javafx.com/fxml/1"  
+            fx:controller="javafxcalculator.FXMLController"  
+            alignment="TOP_CENTER" hgap="20" vgap="20"  
+            
+>
+    
+    <!--adds padding around buttons-->
+    <padding>
+        <Insets top="25" right="-10" bottom="25" left="25"/>
+    </padding>
+    
+   
+    <!--output for math-->
+    <TextArea fx:id="output" 
+              disable="true" 
+              prefHeight="64.0"
+              prefWidth="290.0"
+              GridPane.columnIndex="0"
+              GridPane.rowIndex="0"  
+              GridPane.columnSpan="4"  
+    />
+    
+    <!--Below this, the butons are placed left to right while working down-->
+    
+    <!--Button for 7-->
+    <VBox 
+        GridPane.columnIndex="0" GridPane.rowIndex="1">  
+        <Button text="7" fx:id ="numberSeven" prefHeight="50.0" prefWidth="80.0" />
+    </VBox>
+    
+    <!--Button for 8-->
+    <VBox 
+        GridPane.columnIndex="1" GridPane.rowIndex="1" >  
+        <Button text="8" fx:id ="numberEight" prefHeight="50.0" prefWidth="80.0" />
+    </VBox>
+    
+    <!--Button for 9-->
+    <VBox 
+        GridPane.columnIndex="2" GridPane.rowIndex="1">  
+        <Button text="9" fx:id ="numberNine" prefHeight="50.0" prefWidth="80.0" />
+    </VBox>
+    
+    <!--Button for divider-->
+    <VBox 
+        GridPane.columnIndex="3" GridPane.rowIndex="1">  
+        <Button text="/" fx:id ="divideButton" prefHeight="50.0" prefWidth="80.0" />
+    </VBox>
+    
+    <!--Button for 4-->
+    <VBox 
+        GridPane.columnIndex="0" GridPane.rowIndex="2">  
+        <Button text="4" fx:id ="numberFour" prefHeight="50.0" prefWidth="80.0" />
+    </VBox>
+    
+    <!--Button for 5-->
+    <VBox 
+        GridPane.columnIndex="1" GridPane.rowIndex="2">  
+        <Button text="5" fx:id ="numberFive" prefHeight="50.0" prefWidth="80.0" />
+    </VBox>
+    
+    <!--Button for 6-->
+    <VBox 
+        GridPane.columnIndex="2" GridPane.rowIndex="2">  
+        <Button text="6" fx:id ="numberSix" prefHeight="50.0" prefWidth="80.0" />
+    </VBox>
+    
+    <!--Button for multiplying-->
+    <VBox 
+        GridPane.columnIndex="3" GridPane.rowIndex="2">  
+        <Button text="X" fx:id ="multiplyButton" prefHeight="50.0" prefWidth="80.0" />
+    </VBox>
+    
+    <!--Button for 1-->
+    <VBox 
+        GridPane.columnIndex="0" GridPane.rowIndex="3">  
+        <Button text="1" fx:id ="numberOne" prefHeight="50.0" prefWidth="80.0" />
+    </VBox>
+    
+    <!--Button for 2-->
+    <VBox 
+        GridPane.columnIndex="1" GridPane.rowIndex="3">  
+        <Button text="2" fx:id ="numberTwo" prefHeight="50.0" prefWidth="80.0" />
+    </VBox>
+    
+    <!--Button for 3-->
+    <VBox 
+        GridPane.columnIndex="2" GridPane.rowIndex="3">  
+        <Button text="3" fx:id ="numberThree" prefHeight="50.0" prefWidth="80.0" />
+    </VBox>
+    
+    <!--Button for minus-->
+    <VBox 
+        GridPane.columnIndex="3" GridPane.rowIndex="3">  
+        <Button text="-" fx:id ="minusButton" prefHeight="50.0" prefWidth="80.0" />
+    </VBox>
+    
+    <!--Button for 0-->
+    <VBox 
+        GridPane.columnIndex="0" GridPane.rowIndex="4">  
+        <Button text="0" fx:id ="numberZero" prefHeight="50.0" prefWidth="80.0" />
+    </VBox>
+
+    <!--Button for decimal-->
+    <VBox 
+        GridPane.columnIndex="1" GridPane.rowIndex="4">  
+        <Button text="." fx:id ="decimalButton" prefHeight="50.0" prefWidth="80.0" />
+    </VBox>
+    
+    
+    <!--Button for positive or negative-->
+    <VBox 
+        GridPane.columnIndex="2" GridPane.rowIndex="4">  
+        <Button text="+/-" fx:id ="plusMinusButton" prefHeight="50.0" prefWidth="80.0" />
+    </VBox>
+    
+    <!--Button for adding-->
+    <VBox 
+        GridPane.columnIndex="3" GridPane.rowIndex="4">  
+        <Button text="+" fx:id ="addButton" prefHeight="50.0" prefWidth="80.0" />
+    </VBox>
+    
+    <!--Button for clearing-->
+    <VBox 
+        GridPane.columnIndex="0" GridPane.rowIndex="5" GridPane.columnSpan="4" >  
+        <Button text="clear" fx:id ="clearButton" prefHeight="50.0" prefWidth="180.0" />
+    </VBox>
+    
+    <!--Button for clearing-->
+    <VBox 
+        GridPane.columnIndex="2" GridPane.rowIndex="5" GridPane.columnSpan="4" >  
+        <Button text="enter" fx:id ="enterButton" prefHeight="50.0" prefWidth="180.0" />
+    </VBox>
+    
+    
+    
+    
+    
+    <stylesheets>
+        <URL value="@style.css" />
+    </stylesheets>
+    
+    
+</GridPane>
+                      
+
